@@ -337,3 +337,69 @@ padding-top: 25px;
 .box:nth-child(6){ animation-delay:0.6s;}
 .box:nth-child(7){ animation-delay:0.7s;}
 .box:nth-child(8){ animation-delay:0.8s;}
+/* ===== MOBILE RESPONSIVE FIX FOR NIDHIVERSE ===== */
+@media (max-width: 768px) {
+  /* Navbar ko vertical kar de */
+  .navbar {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px 5px;
+  }
+  
+  .nav-logo {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .nav-search {
+    width: 95%;
+    margin: 10px 0;
+  }
+  
+  .nav-search input {
+    width: 100%;
+  }
+  
+  /* Niche wali black patti hide kar de mobile pe */
+  .panel {
+    height: auto;
+    flex-direction: column;
+  }
+  
+  .panel-ops {
+    display: none; /* Today's Deals etc hide ho jayenge */
+  }
+  
+  /* Hero section theek kar */
+  .hero-section {
+    height: 200px;
+  }
+  
+  .hero-msg {
+    width: 90%;
+    font-size: 12px;
+    bottom: 10px;
+  }
+  
+  /* Shop wale cards ek ke neeche ek kar de */
+  .shop-section {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .box {
+    width: 95% !important;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer bhi theek kar */
+  .foot-panel2 {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .foot-panel2 ul {
+    margin-bottom: 20px;
+  }
+}
